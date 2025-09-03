@@ -1,0 +1,13 @@
+{
+  "is_trained": false,
+  "training_results": {},
+  "timestamp": "2025-08-19T22:12:12.023164",
+  "model_dir": "models/production_final",
+  "version": "Production v1.0",
+  "components": {
+    "anomaly_detector": true,
+    "failure_predictor": true,
+    "zeroday_system": true,
+    "meta_classifier": true
+  }
+}

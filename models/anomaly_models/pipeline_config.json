@@ -1,0 +1,54 @@
+{
+  "lstm_enabled": true,
+  "iso_enabled": true,
+  "stack_enabled": true,
+  "actual_features": 10,
+  "training_stats": {
+    "timestamp": "2025-09-02T21:44:35.517535",
+    "data_shape": [
+      1000,
+      10
+    ],
+    "actual_features": 10,
+    "lstm_results": {
+      "status": "success",
+      "epochs_trained": 30,
+      "final_loss": 0.6807281374931335,
+      "threshold": 1.462810388053556,
+      "sequences_created": 981
+    },
+    "iso_results": {
+      "status": "success",
+      "features": 10,
+      "contamination": 0.12,
+      "n_estimators": 100
+    },
+    "meta_results": {
+      "status": "success",
+      "threshold": 0.7666666666666666,
+      "accuracy": 0.8966666666666666,
+      "roc_auc": 0.7009936766034327
+    },
+    "overall_status": "success"
+  },
+  "is_trained": true,
+  "config": {
+    "model_dir": "models/anomaly_models",
+    "ml_models": {
+      "anomaly_detection": {
+        "lstm_autoencoder": {
+          "enabled": true,
+          "sequence_length": 20,
+          "epochs": 30,
+          "batch_size": 16
+        },
+        "isolation_forest": {
+          "enabled": true,
+          "contamination": 0.12,
+          "n_estimators": 100,
+          "random_state": 42
+        }
+      }
+    }
+  }
+}

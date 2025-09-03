@@ -1,0 +1,36 @@
+{
+  "lstm_enabled": true,
+  "iso_enabled": true,
+  "stack_enabled": true,
+  "actual_features": 53,
+  "training_stats": {
+    "timestamp": "2025-08-19T21:36:12.104354",
+    "data_shape": [
+      25000,
+      68
+    ],
+    "actual_features": 53,
+    "lstm_results": {
+      "status": "success",
+      "epochs_trained": 25,
+      "final_loss": 0.8521133065223694,
+      "threshold": 1.1208616973450694,
+      "sequences_created": 24981
+    },
+    "iso_results": {
+      "status": "failed",
+      "message": "Input X contains infinity or a value too large for dtype('float64')."
+    },
+    "meta_results": {
+      "status": "success",
+      "threshold": 0.6,
+      "accuracy": 0.9009333333333334,
+      "roc_auc": 0.5331235601630339
+    },
+    "overall_status": "success"
+  },
+  "is_trained": true,
+  "config": {
+    "model_dir": "models/anom"
+  }
+}

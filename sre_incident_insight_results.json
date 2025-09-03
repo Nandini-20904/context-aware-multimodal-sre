@@ -1,0 +1,207 @@
+{
+  "sre_training_results": {
+    "timestamp": "2025-08-19T19:01:47.433971",
+    "sre_data_summary": {
+      "logs_entries": 62476,
+      "metrics_entries": 25000,
+      "chat_messages": 24908,
+      "tickets_processed": 200,
+      "sre_sources_active": 4
+    },
+    "ml_data_shape": [
+      25000,
+      98
+    ],
+    "anomaly_results": {
+      "timestamp": "2025-08-19T19:01:47.482645",
+      "data_shape": [
+        25000,
+        98
+      ],
+      "actual_features": 82,
+      "lstm_results": {
+        "status": "success",
+        "epochs_trained": 30,
+        "final_loss": 0.8157035112380981,
+        "threshold": 1.061963622736546,
+        "sequences_created": 24986
+      },
+      "iso_results": {
+        "status": "failed",
+        "message": "Input X contains infinity or a value too large for dtype('float64')."
+      },
+      "meta_results": {
+        "status": "success",
+        "threshold": 0.5333333333333333,
+        "accuracy": 0.8425333333333334,
+        "roc_auc": 0.5493890612544516
+      },
+      "overall_status": "success"
+    },
+    "failure_results": {
+      "status": "success",
+      "model_type": "XGBoost",
+      "threshold": 0.42653061224489797,
+      "test_accuracy": 0.944,
+      "test_roc_auc": 0.8801746645806189,
+      "test_avg_precision": 0.8305715946599534,
+      "test_precision_normal": 0.0,
+      "test_recall_normal": 0.0,
+      "test_f1_normal": 0.0,
+      "test_precision_failure": 0.0,
+      "test_recall_failure": 0.0,
+      "test_f1_failure": 0.0,
+      "features_used": 35,
+      "class_distribution": {
+        "negative": 12941,
+        "positive": 2059
+      }
+    },
+    "zero_day_results": {
+      "timestamp": "2025-08-19T19:08:56.282444",
+      "data_shape": [
+        25000,
+        15
+      ],
+      "attack_periods": [
+        [
+          100,
+          130
+        ],
+        [
+          250,
+          290
+        ],
+        [
+          500,
+          550
+        ],
+        [
+          700,
+          740
+        ],
+        [
+          850,
+          890
+        ]
+      ],
+      "autoencoder_results": {
+        "status": "success",
+        "final_loss": 0.0045638480223715305,
+        "threshold": 0.0057140811229804385,
+        "features_count": 10
+      },
+      "xgb_results": {
+        "status": "success",
+        "test_accuracy": 0.8856,
+        "test_roc_auc": 0.8621197752374924,
+        "test_f1_failure": 0.003484320557491289,
+        "test_precision_failure": 0.2,
+        "test_recall_failure": 0.0017574692442882249,
+        "threshold": 0.9,
+        "features_count": 33,
+        "class_distribution": {
+          "negative": 17819,
+          "positive": 2181
+        }
+      },
+      "overall_status": "success"
+    },
+    "overall_status": "success"
+  },
+  "sre_detection_results": {
+    "timestamp": "2025-08-19T19:09:21.569828",
+    "data_points": 25000,
+    "sre_anomaly_detection": {
+      "timestamp": "2025-08-19T19:09:21.569828",
+      "data_points": 25000,
+      "lstm_results": {
+        "anomaly_scores": "[0.06626618 0.05864254 0.04663064 ... 0.07461249 0.16408833 0.02487753]",
+        "is_anomaly": "[False False False ... False False False]",
+        "anomaly_count": 3750,
+        "anomaly_rate": 15.0
+      },
+      "iso_results": {
+        "anomaly_scores": "[ 0.09782834  0.36185011 -0.13221849 ...  0.69115891 -0.60840696\n -0.36769331]",
+        "is_anomaly": "[False False False ... False  True False]",
+        "anomaly_count": 4064,
+        "anomaly_rate": 16.256
+      },
+      "stacked_results": {
+        "anomaly_scores": "[0.41565466 0.37337086 0.4024778  ... 0.39288894 0.37092225 0.40014497]",
+        "is_anomaly": "[False False False ... False False False]",
+        "anomaly_count": 2662,
+        "anomaly_rate": 10.648,
+        "model_type": "XGBoost Meta-Classifier (~90% Performance)"
+      }
+    },
+    "sre_failure_prediction": {
+      "failure_probabilities": "[0.05267357 0.09825452 0.06624024 ... 0.17326021 0.14914347 0.15701866]",
+      "failure_predictions": "[False False False ... False False False]",
+      "failure_count": 3073,
+      "failure_rate": 12.292,
+      "threshold_used": 0.42653061224489797,
+      "samples_processed": 25000
+    },
+    "sre_zero_day_detection": {
+      "timestamp": "2025-08-19T19:09:26.867380",
+      "data_points": 25000,
+      "autoencoder_anomalies": {
+        "anomaly_scores": "[0.23088947 0.2031303  0.14046947 ... 0.09367023 0.34155215 0.13029358]",
+        "is_anomaly": "[ True  True  True ...  True  True  True]",
+        "anomaly_count": 24635,
+        "anomaly_rate": 98.54
+      },
+      "xgb_failures": {
+        "failure_probabilities": "[0.25139478 0.33626017 0.25389874 ... 0.32181633 0.3066572  0.126964  ]",
+        "failure_predictions": "[False False False ... False False False]",
+        "failure_count": 0,
+        "failure_rate": 0.0
+      },
+      "combined_threats": {
+        "combined_scores": "[0.24319266 0.28300822 0.20852704 ... 0.23055789 0.32061518 0.12829583]",
+        "threat_levels": "[1 1 1 ... 1 1 1]",
+        "is_threat": "[ True  True  True ...  True  True  True]",
+        "threat_count": 24635,
+        "threat_rate": 98.54,
+        "level_counts": {
+          "level_1": 24633,
+          "level_2": 0,
+          "level_3": 2
+        },
+        "ae_contribution": 98.54,
+        "xgb_contribution": 0.0
+      }
+    },
+    "sre_integrated_summary": {
+      "total_data_points": 25000,
+      "ml_systems_active": 3,
+      "total_threats_detected": 30370,
+      "threat_breakdown": {
+        "sre_anomalies": 2662,
+        "sre_predicted_failures": 3073,
+        "sre_zero_day_threats": 24635
+      },
+      "sre_confidence_levels": {
+        "anomaly_detection": "high",
+        "failure_prediction": "high",
+        "zero_day_detection": "high"
+      },
+      "sre_recommendations": [
+        "\ud83d\udea8 HIGH SRE THREAT LEVEL: Escalate to incident commander",
+        "\ud83d\udee1\ufe0f Zero-day threats detected - Activate security incident response",
+        "\ud83d\udd27 System failures predicted - Initiate proactive maintenance procedures",
+        "\ud83d\udd0d Anomalies detected - Review logs and metrics for root cause analysis"
+      ]
+    }
+  },
+  "sre_data_summary": {
+    "logs_entries": 62476,
+    "metrics_entries": 25000,
+    "chat_messages": 24908,
+    "tickets_processed": 200,
+    "sre_sources_active": 4
+  },
+  "ml_transformation_log": [],
+  "timestamp": "2025-08-19T19:09:28.379103"
+}

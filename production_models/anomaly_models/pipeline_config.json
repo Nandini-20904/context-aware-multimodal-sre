@@ -1,0 +1,47 @@
+{
+  "lstm_enabled": true,
+  "iso_enabled": true,
+  "stack_enabled": true,
+  "actual_features": 0,
+  "training_stats": {
+    "timestamp": "2025-08-20T09:32:12.080762",
+    "data_shape": [
+      139133,
+      0
+    ],
+    "actual_features": 0,
+    "lstm_results": {
+      "status": "failed",
+      "message": "Found array with 0 feature(s) (shape=(139133, 0)) while a minimum of 1 is required by StandardScaler."
+    },
+    "iso_results": {
+      "status": "failed",
+      "message": "at least one array or dtype is required"
+    },
+    "meta_results": {
+      "status": "success",
+      "threshold": 0.5333333333333333,
+      "accuracy": 0.8253473885960709,
+      "roc_auc": 0.5051930565929381
+    },
+    "overall_status": "success"
+  },
+  "is_trained": true,
+  "config": {
+    "model_dir": "production_models\\anomaly_models",
+    "ml_models": {
+      "anomaly_detection": {
+        "lstm_autoencoder": {
+          "enabled": true,
+          "sequence_length": 20,
+          "epochs": 25
+        },
+        "isolation_forest": {
+          "enabled": true,
+          "contamination": 0.12,
+          "n_estimators": 100
+        }
+      }
+    }
+  }
+}

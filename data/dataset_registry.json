@@ -1,0 +1,182 @@
+{
+  "anomaly_detection_results": {
+    "path": "anomaly_detection_results.csv",
+    "type": "anomalies",
+    "hash": "281c7cb321785a88a7c2bad546e8a87b",
+    "size": 366891,
+    "modified_time": "2025-08-13T21:41:58.247762",
+    "registered_time": "2025-08-20T09:32:07.916772",
+    "version": 1
+  },
+  "chat": {
+    "path": "chat.csv",
+    "type": "chats",
+    "hash": "f386cc29095f7d00006d25492f1d275c",
+    "size": 1898541,
+    "modified_time": "2025-08-11T22:47:07.933567",
+    "registered_time": "2025-08-20T09:32:07.929120",
+    "version": 1
+  },
+  "combined_data": {
+    "path": "combined_data.csv",
+    "type": "unknown",
+    "hash": "47fe3dd75b913ad4800491b8f973edeb",
+    "size": 62578,
+    "modified_time": "2025-08-19T17:53:12.479835",
+    "registered_time": "2025-08-20T09:32:07.943139",
+    "version": 1
+  },
+  "logs": {
+    "path": "logs.csv",
+    "type": "logs",
+    "hash": "f24e9ad9b9d22505559ab76830c2abc1",
+    "size": 3449060,
+    "modified_time": "2025-08-11T22:47:07.823697",
+    "registered_time": "2025-08-20T09:32:07.958874",
+    "version": 1
+  },
+  "metrics": {
+    "path": "metrics.csv",
+    "type": "metrics",
+    "hash": "6a484ca65b6a1e2389db93d96f8e6904",
+    "size": 2136445,
+    "modified_time": "2025-08-11T22:47:07.589111",
+    "registered_time": "2025-08-20T09:32:07.966143",
+    "version": 1
+  },
+  "sre_incident_insight_results": {
+    "path": "sre_incident_insight_results.json",
+    "type": "tickets",
+    "hash": "232fce78fd4e010e800b8507fe33c122",
+    "size": 6621,
+    "modified_time": "2025-08-19T19:09:28.386655",
+    "registered_time": "2025-08-20T09:32:07.981598",
+    "version": 1
+  },
+  "tickets": {
+    "path": "tickets.csv",
+    "type": "tickets",
+    "hash": "7b03d1d4391ee3647e07fb2dd0129339",
+    "size": 13268,
+    "modified_time": "2025-08-11T22:47:07.933567",
+    "registered_time": "2025-08-20T09:32:07.985069",
+    "version": 1
+  },
+  "dataset_registry": {
+    "path": "data\\dataset_registry.json",
+    "type": "unknown",
+    "hash": "1187d01c0823f338bcc56043e8874c61",
+    "size": 5927,
+    "modified_time": "2025-08-20T09:32:28.752604",
+    "registered_time": "2025-08-20T09:32:31.106182",
+    "version": 21
+  },
+  "final_xgb_xgb_model": {
+    "path": "models\\final_xgb_xgb_model.json",
+    "type": "unknown",
+    "hash": "49875d4d801b0b3df4ec5b68d9abd463",
+    "size": 134493,
+    "modified_time": "2025-08-19T18:59:31.412839",
+    "registered_time": "2025-08-20T09:32:08.016778",
+    "version": 1
+  },
+  "lstm_autoencoder_architecture": {
+    "path": "models\\lstm_autoencoder_architecture.json",
+    "type": "unknown",
+    "hash": "042f236485dd212b8040a328f5f310ae",
+    "size": 4634,
+    "modified_time": "2025-08-19T17:42:29.947670",
+    "registered_time": "2025-08-20T09:32:08.032442",
+    "version": 1
+  },
+  "meta_classifier_xgb_model": {
+    "path": "models\\meta_classifier_xgb_model.json",
+    "type": "unknown",
+    "hash": "c09e22fb05a214c2f1e43b60a55ae38e",
+    "size": 257450,
+    "modified_time": "2025-08-19T17:42:30.027637",
+    "registered_time": "2025-08-20T09:32:08.048723",
+    "version": 1
+  },
+  "pipeline_config": {
+    "path": "models\\pipeline_config.json",
+    "type": "unknown",
+    "hash": "f023f63b7a542c0d2c12aafffef685c3",
+    "size": 1264,
+    "modified_time": "2025-08-19T17:42:30.031668",
+    "registered_time": "2025-08-20T09:32:08.064357",
+    "version": 1
+  },
+  "system_metadata": {
+    "path": "models\\system_metadata.json",
+    "type": "unknown",
+    "hash": "6f964ab3ad581fed8c142d9ee472d3c1",
+    "size": 319,
+    "modified_time": "2025-08-19T18:59:31.417361",
+    "registered_time": "2025-08-20T09:32:08.075122",
+    "version": 1
+  },
+  "_xgb_model": {
+    "path": "models\\_xgb_model.json",
+    "type": "unknown",
+    "hash": "f46121cdafc06c00a64d16ec614cd81a",
+    "size": 90166,
+    "modified_time": "2025-08-19T10:13:25.333610",
+    "registered_time": "2025-08-20T09:32:08.082947",
+    "version": 1
+  },
+  "meta_classifier_meta_xgb": {
+    "path": "models\\production_final\\meta_classifier_meta_xgb.json",
+    "type": "unknown",
+    "hash": "307a9cdff63d20e0a00a1ec2d80ebefb",
+    "size": 163339,
+    "modified_time": "2025-08-19T22:12:12.023165",
+    "registered_time": "2025-08-20T09:32:08.092959",
+    "version": 1
+  },
+  "system_config": {
+    "path": "models\\production_final\\system_config.json",
+    "type": "unknown",
+    "hash": "7f04242f0f4c31a694c547630b6ec9af",
+    "size": 322,
+    "modified_time": "2025-08-19T22:12:12.023165",
+    "registered_time": "2025-08-20T09:32:08.109184",
+    "version": 1
+  },
+  "anomaly_config": {
+    "path": "models\\production_final\\anomaly\\anomaly_config.json",
+    "type": "anomalies",
+    "hash": "b4c03157c3774dc33e0c409f01d3b1b4",
+    "size": 63,
+    "modified_time": "2025-08-19T22:12:12.002190",
+    "registered_time": "2025-08-20T09:32:08.112415",
+    "version": 1
+  },
+  "zeroday_config": {
+    "path": "models\\production_final\\zeroday\\zeroday_config.json",
+    "type": "unknown",
+    "hash": "595335130fe6cb0ae7abefef669b1dd0",
+    "size": 63,
+    "modified_time": "2025-08-19T22:12:12.003686",
+    "registered_time": "2025-08-20T09:32:08.116268",
+    "version": 1
+  },
+  "failure_model_xgb_model": {
+    "path": "production_models\\failure_model_xgb_model.json",
+    "type": "failures",
+    "hash": "038654a2adad59900669cfd8699a47d1",
+    "size": 111609,
+    "modified_time": "2025-08-19T22:20:16.434549",
+    "registered_time": "2025-08-20T09:32:08.122021",
+    "version": 1
+  },
+  "meta_model_xgb": {
+    "path": "production_models\\meta_model_xgb.json",
+    "type": "unknown",
+    "hash": "ebd1ed36627a4e4c468989514c80c700",
+    "size": 59619,
+    "modified_time": "2025-08-19T22:20:16.472332",
+    "registered_time": "2025-08-20T09:32:08.127003",
+    "version": 1
+  }
+}

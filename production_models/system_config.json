@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-08-19T22:20:16.477911",
+  "is_trained": true,
+  "model_performance": {
+    "status": "success",
+    "meta_accuracy": 1.0,
+    "meta_roc_auc": 1.0,
+    "meta_avg_precision": 1.0,
+    "meta_f1": 1.0,
+    "meta_precision": 1.0,
+    "meta_recall": 1.0,
+    "meta_threshold": 0.5,
+    "meta_features_count": 21,
+    "class_distribution": {
+      "negative": 1036,
+      "positive": 839
+    }
+  },
+  "meta_feature_names": [
+    "anomaly_score",
+    "anomaly_flag",
+    "lstm_score",
+    "lstm_flag",
+    "iso_score",
+    "iso_flag",
+    "failure_prob",
+    "failure_flag",
+    "zero_day_score",
+    "zero_day_flag",
+    "threat_level",
+    "anomaly_failure_and",
+    "anomaly_zero_day_and",
+    "failure_zero_day_and",
+    "score_max",
+    "score_mean",
+    "flag_sum",
+    "cpu_util_norm",
+    "memory_util_norm",
+    "error_rate_log",
+    "latency_norm"
+  ],
+  "version": "1.0.0"
+}
